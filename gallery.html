@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Earthwave Inc | Gallery</title>
+    <meta
+      name="description"
+      content="Earthwave Inc – Explore our gallery showcasing construction, land preparation, and heavy machinery projects in Zimbabwe."
+    />
+
+    <style>
+      /* Reset and base styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        background: linear-gradient(#ffb400, white);
+        color: #1c1c1c;
+        text-align: center;
+        scroll-behavior: smooth;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      header img {
+        width: 150px;
+        height: auto;
+      }
+
+      .pages {
+        display: flex;
+        gap: 30px;
+      }
+
+      .pages a {
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .pages a:hover {
+        color: #ffb400;
+      }
+
+      /* Hero Section */
+      .hero {
+        position: relative;
+        margin-bottom: 50px;
+      }
+
+      .hero img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        filter: brightness(70%);
+      }
+
+      .hero-content {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        max-width: 600px;
+        color: white;
+      }
+
+      .hero-content h1 {
+        font-size: 48px;
+        color: #ffb400;
+      }
+
+      .hero-content p {
+        font-size: 18px;
+        margin-top: 10px;
+        line-height: 1.5;
+      }
+
+      /* Gallery Grid */
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        padding: 20px 40px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .grid-item {
+        background-color: #faf9f6;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .grid-item img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .grid-item img:hover {
+        transform: scale(1.05) rotate(3deg);
+      }
+
+      /* Footer */
+      footer {
+        background-color: #1c1c1c;
+        color: #faf9f6;
+        padding: 40px 20px;
+        text-align: center;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 768px) {
+        .hero-content {
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: center;
+          top: 25%;
+        }
+
+        .grid-container {
+          grid-template-columns: 1fr;
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="Gallery/logo.jpg" alt="Earthwave Inc logo" />
+      <nav class="pages">
+        <a href="index.html">Home</a>
+        <a href="index.html#about-section">About</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#contact-section">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="equipment.html">Equipment</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="Gallery/services1.jpeg" alt="Construction services" />
+      <div class="hero-content">
+        <h1>Explore Our Gallery</h1>
+        <p>
+          Our gallery showcases the quality and precision behind every Earthwave
+          Inc project. From road construction to land preparation and heavy
+          machinery operations, each image reflects our commitment to excellence
+          and reliability.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="grid-container">
+      <div class="grid-item">
+        <img src="Gallery/gal2.jpg" alt="Project 1" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal3.jpg" alt="Project 2" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal4.jpg" alt="Project 3" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal7.jpg" alt="Project 4" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal11.jpg" alt="Project 5" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal12.jpg" alt="Project 6" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal14.jpg" alt="Project 7" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal16.jpg" alt="Project 8" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal17.jpg" alt="Project 1" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal20.jpg" alt="Project 2" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal24.jpg" alt="Project 3" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal28.jpg" alt="Project 4" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal29.jpg" alt="Project 5" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal30.jpg" alt="Project 6" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal31.jpg" alt="Project 7" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal32.jpg" alt="Project 8" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal34.jpg" alt="Project 1" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal35.jpg" alt="Project 2" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal36.jpg" alt="Project 3" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal37.jpg" alt="Project 4" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal38.jpg" alt="Project 5" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal39.jpg" alt="Project 6" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal41.jpg" alt="Project 7" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal42.jpg" alt="Project 8" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal43.jpg" alt="Project 1" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal45.jpg" alt="Project 2" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal48.jpg" alt="Project 3" />
+      </div>
+      <div class="grid-item">
+        <img src="Gallery/gal50.jpg" alt="Project 4" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <h3>Earthwave Inc</h3>
+      Professional earthmoving and excavation services with over 10 years of
+      experience. We move earth and build futures for our clients across the
+      region.<br /><br />
+      📞 +263 772 331 989 | 📩 earthwave.incorp@gmail.com | 📍 15314 Ruwa
+      Industrial, Harare, Zimbabwe
+    </footer>
+  </body>
+</html>

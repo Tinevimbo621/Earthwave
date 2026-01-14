@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Earthwave Inc | Construction & Plant Hire Services</title>
+    <meta
+      name="description"
+      content="Earthwave Inc provides professional road construction, plant hire, and land clearing services in Zimbabwe. Reliable equipment, skilled operators, and quality results."
+    />
+
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        background-color: #fbebc1;
+        color: #1c1c1c;
+      }
+
+      /* ---------- Header ---------- */
+      header {
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 40px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      header img {
+        width: 150px;
+      }
+      .pages {
+        display: flex;
+        gap: 30px;
+      }
+      .pages a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #1c1c1c;
+      }
+      .pages a:hover {
+        color: #ffb400;
+      }
+
+      /* ---------- Hero ---------- */
+      .hero {
+        position: relative;
+        margin-bottom: 60px;
+      }
+      .hero img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        filter: brightness(70%);
+      }
+      .hero-content {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        max-width: 600px;
+        color: #fff;
+      }
+      .hero-content h1 {
+        font-size: 46px;
+        color: #ffb400;
+      }
+      .hero-content p {
+        font-size: 18px;
+      }
+
+      .btn {
+        display: inline-block;
+        background: #ffb400;
+        color: #1c1c1c;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 15px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      .btn:hover {
+        background: #e6a200;
+        color: #fff;
+      }
+
+      /* ---------- Layout Wrapper ---------- */
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 60px 30px;
+      }
+
+      h2 {
+        color: #ffb400;
+        margin-bottom: 10px;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      /* ---------- Services Overview ---------- */
+      .overview {
+        background: #fff8e5;
+        text-align: center;
+      }
+      .overview-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+      }
+      .overview-item {
+        background: #2c2c2c;
+        color: #fff;
+        padding: 25px;
+        border-radius: 10px;
+      }
+
+      /* ---------- Service Sections ---------- */
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 25px;
+      }
+      .service-box {
+        background: #1c1c1c;
+        color: #ffb400;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .service-box ul {
+        color: #faf9f6;
+        margin-left: 20px;
+      }
+      .service-box img {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5px;
+      }
+
+      /* ---------- Testimonials ---------- */
+      .testimonials {
+        background: #fff8e5;
+      }
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+      }
+      .testimonial {
+        background: #ffb400;
+        padding: 20px;
+        border-radius: 10px;
+        font-style: italic;
+      }
+
+      /* ---------- Footer ---------- */
+      footer {
+        background: #1c1c1c;
+        color: #faf9f6;
+        padding: 40px;
+        text-align: center;
+      }
+
+      @media (max-width: 900px) {
+        .service-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero-content {
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="Gallery/logo.jpg" alt="Earthwave Inc logo" />
+      <nav class="pages">
+        <a href="index.html">Home</a>
+        <a href="index.html#about-section">About</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#contact-section">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="equipment.html">Equipment</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img src="Gallery/services1.jpeg" alt="Construction services" />
+      <div class="hero-content">
+        <h1>Our Services</h1>
+        <p>
+          Reliable construction solutions delivered with precision, safety, and
+          efficiency.
+        </p>
+        <a href="home.html#contact" class="btn">Get a Free Quote</a>
+      </div>
+    </section>
+
+    <section class="overview container">
+      <h2>Our Core Services</h2>
+      <p>
+        Delivering quality, efficiency, and reliability across every project.
+      </p>
+
+      <div class="overview-grid">
+        <div class="overview-item">
+          <b>Road Construction</b>
+          <p>Durable roads built to last.</p>
+        </div>
+        <div class="overview-item">
+          <b>Plant Hire</b>
+          <p>Modern machinery with skilled operators.</p>
+        </div>
+        <div class="overview-item">
+          <b>Land Clearing</b>
+          <p>Efficient site preparation services.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>🛣 Road Construction</h2>
+      <div class="service-grid">
+        <div class="service-box">
+          <b>What We Offer</b>
+          <ul>
+            <li>Asphalt & concrete paving</li>
+            <li>Drainage systems</li>
+            <li>Road rehabilitation</li>
+          </ul>
+        </div>
+        <div class="service-box">
+          <b>Project Example</b>
+          <img src="road_project.jpg" alt="Road construction project" />
+        </div>
+        <div class="service-box">
+          <b>Why Choose Us</b>
+          <ul>
+            <li>Experienced engineers</li>
+            <li>Safety-first approach</li>
+            <li>On-time delivery</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>🚜 Plant Hire</h2>
+      <div class="service-grid">
+        <div class="service-box">
+          <b>Equipment Available</b>
+          <ul>
+            <li>Excavators & bulldozers</li>
+            <li>Graders & rollers</li>
+            <li>Tippers & bowsers</li>
+          </ul>
+        </div>
+        <div class="service-box">
+          <b>Benefits</b>
+          <ul>
+            <li>Flexible hire</li>
+            <li>Serviced machines</li>
+            <li>Certified operators</li>
+          </ul>
+        </div>
+        <div class="service-box">
+          <b>Project Example</b>
+          <img src="plant_project.jpg" alt="Plant hire project" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>🌾 Land Clearing</h2>
+      <div class="service-grid">
+        <div class="service-box">
+          <b>Services</b>
+          <ul>
+            <li>Tree removal</li>
+            <li>Earth moving</li>
+            <li>Site leveling</li>
+          </ul>
+        </div>
+        <div class="service-box">
+          <b>Machinery</b>
+          <p>Bulldozers, graders, compactors</p>
+        </div>
+        <div class="service-box">
+          <b>Why It Matters</b>
+          <p>Strong foundations start with proper preparation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials container">
+      <h2>💬 Client Testimonials</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          “Delivered on time and exceeded expectations.” — John D.
+        </div>
+        <div class="testimonial">
+          “Professional operators and excellent equipment.” — Mary K.
+        </div>
+        <div class="testimonial">
+          “Efficient land clearing services.” — Peter L.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h3>Earthwave Inc</h3>
+      📞 +263 772 331 989 | 📩 earthwave.incorp@gmail.com<br />
+      📍 15314 Ruwa Industrial, Harare, Zimbabwe
+    </footer>
+  </body>
+</html>
