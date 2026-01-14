@@ -51,26 +51,34 @@
       }
 
       /* Header */
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 40px;
-        background-color: #ffffff;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      }
-      header img {
-        width: 150px;
-        height: auto;
-      }
-      .pages {
-        display: flex;
-        gap: 30px;
-        font-weight: 600;
-      }
+    /* Make header links responsive */
+header {
+  flex-wrap: wrap; /* allow items (logo + links) to move to next line */
+}
+
+.pages {
+  flex-wrap: wrap; /* allow links to wrap */
+}
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 600px) {
+  .pages {
+    flex-direction: column; /* stack links vertically */
+    gap: 10px;              /* smaller spacing */
+    width: 100%;
+    align-items: center;     /* center links */
+    margin-top: 10px;        /* spacing from logo */
+  }
+
+  header {
+    padding: 15px 20px;      /* reduce padding for small screens */
+  }
+
+  header img {
+    margin-bottom: 10px;     /* spacing between logo and links */
+  }
+}
+
 
       /* ===== Hero Section ===== */
       .hero,
