@@ -51,7 +51,7 @@
       }
 
       /* Header */
-  header {
+      header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -71,8 +71,6 @@
         gap: 30px;
         font-weight: 600;
       }
-
-
 
       /* ===== Hero Section ===== */
       .hero,
@@ -350,12 +348,53 @@
           top: 15%;
         }
       }
+      /* Hamburger menu styling */
+      .hamburger {
+        display: none; /* hidden on desktop */
+        font-size: 28px;
+        cursor: pointer;
+      }
+
+      /* Mobile view */
+      @media screen and (max-width: 768px) {
+        .pages {
+          display: none; /* hide links by default */
+          flex-direction: column;
+          gap: 10px;
+          width: 100%;
+          text-align: center;
+          margin-top: 10px;
+          background-color: #ffffff;
+          padding: 10px 0;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hamburger {
+          display: block; /* show hamburger */
+        }
+
+        header {
+          flex-wrap: wrap; /* allow logo + hamburger on same line */
+          justify-content: space-between;
+          padding: 15px 20px;
+        }
+      }
+
+      /* When menu is active (shown) */
+      .pages.active {
+        display: flex;
+      }
     </style>
   </head>
   <body>
-    <!-- Header -->
     <header>
       <img src="Gallery/logo.jpg" alt="Earthwave Inc logo" />
+
+      <!-- Hamburger button -->
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+      <!-- Navigation links -->
       <nav class="pages">
         <a href="index.html">Home</a>
         <a href="index.html#about-section">About</a>
@@ -572,5 +611,12 @@
         });
       });
     </script>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".pages");
+        menu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
+
